@@ -1,0 +1,337 @@
+<html>
+    <head>
+        <title>
+            Ph. D. students Of Electronics Department
+        </title>
+        <script src="./Ph. D. students.js"></script>
+        
+        <style>
+body{
+    background: linear-gradient(to bottom,#9768D1, #16193B);
+    margin: 0%;
+    font-family:'Exo 2', sans-serif;
+    color: #dF4F49;
+}
+
+
+.back{
+    margin: 0 10%;
+    margin-bottom: 30;
+    height: 100%;
+    background: linear-gradient(to bottom,#FFFAD5, #FFD34E);
+
+}
+
+
+
+.heading{
+    width: 100%;
+    height: 40;
+    background: #130512;
+    text-align: center;
+}
+.heading p{
+    padding: 10 0;
+    font-size: larger;
+    color: #dfdfdf;
+}
+
+
+.buttonc{
+    padding: 10 30;
+    margin: 0;
+}
+.buttonc input{
+    width: 120;
+    margin: 0 8;
+    padding: 10 10;
+    border: 5px;
+    border-color: rgba(128,128,128,0);
+    background: #E74C3C;
+    border-style: solid;
+    text-align: center;
+    color: #ffffff;
+    font-size: small;
+}
+.buttonc input:hover{
+    background: #FF6F69;
+    border: 20;
+    border-style: solid;
+    border-color: #FFD393;
+    cursor: pointer;
+}
+.buttonc table tr td p{
+    font-size: 10;
+    text-align: center;
+}
+
+
+.pdf{
+    align-items: center;
+    padding: 10 5%;
+    width: 90%;
+    height: 78%;
+}
+iframe{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.footer {
+    background: #130512;
+    color: #EFEFEF;
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
+    align-items: center;
+}
+.footer p{
+    padding-top: 30;
+}
+.footer a{
+    color: #E74C3C;
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    color:#dfdfdf;
+    background-color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#eced{
+    background-color: black;
+    color:#dfdfdf;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 10px;
+    display: none;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: black;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    padding: 10px, 10px;
+    font-size: 1.2rem;
+    background-color: black;
+}
+.nav-list li {
+    background-color: black;
+    margin: 20px;
+}
+
+.nav-list li a:hover{
+    color: #dfdfdf;
+    background-color: #E74C3C;
+}
+.nav-list a{
+    text-decoration: none;
+    background-color: black;
+    padding: 0px 8px 0px 8px;
+    border-radius: 8px;
+    color: #dfdfdf;
+}
+#hamburger_label{
+    color: white;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+@media only screen and (max-width:920px) {
+    .navbar h1{
+     display: none;
+    }
+    #eced{
+        display: block;
+        font-size: 1.4rem;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #hamburger_label{
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        top: 2.5%;
+        right: 4%;
+        background-color: black;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 100vh;
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: flex;
+    }
+    
+    #eced{
+        font-size: 1.2rem;
+    }
+    #background_img p{
+        display: none;
+    }
+}
+
+.submenu ul{
+    list-style: none;
+    background-color: black;
+}
+.submenu ul li a{
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.submenu li{
+    text-align: center;
+}
+.group{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.submenu{
+    display: none;
+}
+#group_2:hover  #submenu_2{
+    display: flex;
+}
+#group_3:hover  #submenu_3{
+    display: flex;
+}
+#group_4:hover  #submenu_4{
+    display: flex;
+}
+#group_5:hover  #submenu_5{
+    display: flex;
+}
+
+
+.active a{
+    color: #dfdfdf;
+    background-color:#E74C3C;
+}
+
+
+
+
+
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
+        <meta http-equiv="refresh" contents="3" charset="UTF-8" >
+    </head>
+        
+    <body>
+
+        <nav>
+            <section id="header">
+                <section class="navbar">
+                    <img class="logo" src="./svnit logo.png" alt="svnit_logo">
+                    <h1>Electronics Engineering Department</h1>
+                    <label id="hamburger_label" for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav-list">
+    
+                        <li><a href="./index.html">&nbsp;&#127968;&nbsp;</a></li>
+                        <div class="group" id="group_2">
+    
+                            <li><a href="./admission.html">Academics</a></li>
+                            <div class="submenu" id="submenu_2">
+                                <ul>
+                                    <li><a href="./admission.html">Admission</a></li>
+                                    <li><a href="./btech.html">B.Tech (E.C)</a></li>
+                                    <li><a href="./mtech.html">M.Tech (E.C)</a></li>
+                                    <li><a href="./phd.html">Ph.D Electroics Engineering</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_3" class="group">
+                            <li class="active"><a href="./Faculty.html">People</a></li>
+                            <div class="submenu" id="submenu_3">
+                                <ul>
+                                    <li><a href="./Faculty.html">Faculty</a></li>
+                                    <li><a href="./M.Tech students.html">M.Tech Students</a></li>
+                                    <li class="active"><a href="./Ph. D. students.html">Ph.D Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_4" class="group">
+                            <li><a href="./gallery.html">Gallery</a></li>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="./research.html">Research</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="library.html">Library</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+                    </ul>
+                </section>
+                <div id="eced">Electronics Engineering Department</div>
+            </section>
+        </nav>
+
+<br><br><br><br>
+
+        <div class="back">
+            <div class="heading">
+                <p>Ph. D Electronics Engineering Department</p>
+            </div>
+<br>
+            <div class="buttonc">
+                <input type="button" onclick="setURL(1)" value="Ongoing">
+&nbsp;
+                <input type="button" onclick="setURL(2)" value="Completed">
+            </div>
+            <iframe id="iframe" src="./Completed Ph.D.pdf" class="pdf"></iframe> 
+        </div>
+        <div class="footer">
+            <p><b>All Right Reserved, Team Syntex Terminators, SVNIT, Surat
+            <br><br><a href="./contact.html" class="nav_list">Contact Us</a></b></p>
+        </div>
+    </body>
+</html>

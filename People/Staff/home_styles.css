@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+}
+body{
+    background: linear-gradient(to top,#9768D1, #16193B);
+    font-family:'Exo 2', sans-serif;
+}
+
+/* navigation bar */
+
+#header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    color:#dfdfdf;
+    background-color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#eced{
+    background-color: black;
+    color:#dfdfdf;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 10px;
+    display: none;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: black;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    padding: 10px, 10px;
+    font-size: 1.2rem;
+    background-color: black;
+}
+.nav-list li {
+    background-color: black;
+    margin: 20px;
+}
+
+.nav-list li a:hover{
+    color: #dfdfdf;
+    background-color: #E74C3C;
+}
+.nav-list a{
+    text-decoration: none;
+    background-color: black;
+    padding: 0px 8px 0px 8px;
+    border-radius: 8px;
+    color: #dfdfdf;
+}
+#hamburger_label{
+    color: white;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+@media only screen and (max-width:920px) {
+    .navbar h1{
+     display: none;
+    }
+    #eced{
+        display: block;
+        font-size: 1.4rem;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #hamburger_label{
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        top: 2.5%;
+        right: 4%;
+        background-color: black;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 100vh;
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: flex;
+    }
+    
+    #eced{
+        font-size: 1.2rem;
+    }
+    #background_img p{
+        display: none;
+    }
+}
+
+.submenu ul{
+    list-style: none;
+    background-color: black;
+}
+.submenu ul li a{
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.submenu li{
+    text-align: center;
+}
+.group{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.submenu{
+    display: none;
+}
+#group_2:hover  #submenu_2{
+    display: flex;
+}
+#group_3:hover  #submenu_3{
+    display: flex;
+}
+#group_4:hover  #submenu_4{
+    display: flex;
+}
+#group_5:hover  #submenu_5{
+    display: flex;
+}
+
+
+.active a{
+    color: #dfdfdf;
+    background-color:#E74C3C;
+}
+
+/* background */
+#background{
+    margin-top: 0;
+    width: 80%;
+    height: 80vh;
+}
+#background #background_img{
+    /* position: absolute; */
+    background: rgba(0, 0, 0, 0.7) url(electronics_dep_building.jpeg) no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    z-index: -1;
+    animation: fade 20s infinite;
+}
+
+@keyframes fade{
+    20% {
+        background-image: url(./eced\ front.PNG);
+    }
+
+    40% {
+        background-image: url(./eced\ corridor\ 1.PNG);
+    }
+
+    60% {
+        background-image: url(./eced\ front\ 2.PNG);
+    }
+
+}
+
+#trial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#notice{
+    width: 20%;
+    height: 100vh;
+    background-color:black;
+}
+.notice_points{
+    color: white;
+    padding: 12px 0 5px 2%;
+    margin: 0 8% 0 8% ;
+    background-color:black;
+    /* height: 100vh; */
+    border-bottom: 1px solid rgb(89, 88, 88);
+}
+.notice_points:nth-last-of-type(1){
+    border-bottom: none;
+}
+#notice h1{
+    padding-top: 140px;
+    padding-bottom: 10px;
+    padding-left: 24%;
+    background-color:black;
+    color: white;
+}
+
+#background_img p{
+    position:relative;
+    top: 480px;
+    left: 2%;
+    color:#dfdfdf;
+    width: 70%;   
+}
+/* Vision Mission */
+.section{
+    margin: 40px 10% 0 5%;
+}
+.heading{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+    color: white;
+}
+.heading::first-letter{
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+.MV{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    color: white; 
+}
+
