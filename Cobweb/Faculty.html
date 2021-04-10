@@ -1,0 +1,1211 @@
+<html>
+    <head>
+        <title>Faculties Of Electronics Department</title>     
+        <style>
+
+
+
+body{
+    background: linear-gradient(to bottom,#9768D1, #16193B);
+    margin: 0%;
+    font-family:'Exo 2', sans-serif;
+    color: #dF4F49;
+}
+
+
+.back{
+    margin: 0 10%;
+
+}
+
+
+.hod{
+    width: 100%;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: larger;
+}
+.hod th, .faculties th{
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    background: #130512;
+    color: #f2f2f2;
+}
+.hod img, .faculties img{
+    width: 180px;
+    height: 232.33px;
+    padding: 5 5;
+}
+
+
+.faculties ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.faculties li{
+    float: left;
+    padding: 0 5%;
+    text-align: center;
+}
+
+
+
+
+.footer {
+    background: #130512;
+    color: #EFEFEF;
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
+    align-items: center;
+}
+.footer p{
+    padding-top: 30;
+}
+.footer a{
+    color: #E74C3C;
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    color:#dfdfdf;
+    background-color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#eced{
+    background-color: black;
+    color:#dfdfdf;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 10px;
+    display: none;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: black;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    padding: 10px, 10px;
+    font-size: 1.2rem;
+    background-color: black;
+}
+.nav-list li {
+    background-color: black;
+    margin: 20px;
+}
+
+.nav-list li a:hover{
+    color: #dfdfdf;
+    background-color: #E74C3C;
+}
+.nav-list a{
+    text-decoration: none;
+    background-color: black;
+    padding: 0px 8px 0px 8px;
+    border-radius: 8px;
+    color: #dfdfdf;
+}
+#hamburger_label{
+    color: white;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+@media only screen and (max-width:920px) {
+    .navbar h1{
+     display: none;
+    }
+    #eced{
+        display: block;
+        font-size: 1.4rem;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #hamburger_label{
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        top: 2.5%;
+        right: 4%;
+        background-color: black;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 100vh;
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: flex;
+    }
+    
+    #eced{
+        font-size: 1.2rem;
+    }
+    #background_img p{
+        display: none;
+    }
+}
+
+.submenu ul{
+    list-style: none;
+    background-color: black;
+}
+.submenu ul li a{
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.submenu li{
+    text-align: center;
+}
+.group{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.submenu{
+    display: none;
+}
+#group_2:hover  #submenu_2{
+    display: flex;
+}
+#group_3:hover  #submenu_3{
+    display: flex;
+}
+#group_4:hover  #submenu_4{
+    display: flex;
+}
+#group_5:hover  #submenu_5{
+    display: flex;
+}
+
+
+.active a{
+    color: #dfdfdf;
+    background-color:#E74C3C;
+}
+
+
+
+
+
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
+        <meta http-equiv="refresh" contents="3" charset="UTF-8" >
+    </head>
+        
+    <body>
+
+        <nav>
+            <section id="header">
+                <section class="navbar">
+                    <img class="logo" src="./svnit logo.png" alt="svnit_logo">
+                    <h1>Electronics Engineering Department</h1>
+                    <label id="hamburger_label" for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav-list">
+    
+                        <li><a href="./index.html">&nbsp;&#127968;&nbsp;</a></li>
+                        <div class="group" id="group_2">
+    
+                            <li><a href="./admission.html">Academics</a></li>
+                            <div class="submenu" id="submenu_2">
+                                <ul>
+                                    <li><a href="./admission.html">Admission</a></li>
+                                    <li><a href="./btech.html">B.Tech (E.C)</a></li>
+                                    <li><a href="./mtech.html">M.Tech (E.C)</a></li>
+                                    <li><a href="./phd.html">Ph.D Electroics Engineering</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_3" class="group">
+                            <li class="active"><a href="./Faculty.html">People</a></li>
+                            <div class="submenu" id="submenu_3">
+                                <ul>
+                                    <li class="active"><a href="./Faculty.html">Faculty</a></li>
+                                    <li><a href="./M.Tech students.html">M.Tech Students</a></li>
+                                    <li><a href="./Ph. D. students.html">Ph.D Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_4" class="group">
+                            <li><a href="./gallery.html">Gallery</a></li>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="./research.html">Research</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="library.html">Library</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+                    </ul>
+                </section>
+                <div id="eced">Electronics Engineering Department</div>
+            </section>
+        </nav>
+
+<br><br><br><br><br>
+
+        <div class="back">
+            <table class="hod" border="0">
+                <tbody>
+                <tr>
+                    <th colspan="2">
+                            Head Of Department
+                    </th>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./hod.PNG">
+                    </td>
+                    <td style="width: 100%; background: linear-gradient(to top,#ED8C2B, #FFD34E)">
+                        <p><b>Dr. PIYUSH N. PATEL</b>
+                            <br>hodd@eced.svnit.ac.in
+                            <br>0261-2201551
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+<br><br><br>
+
+            <table class="faculties" border="0">
+                <tbody>
+                <tr>
+                    <th colspan="3">
+                            Other Faculties
+                    </th>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./ahl.PNG">
+                    </td>
+                    <td style="background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p>
+                            <b>Prof. A. H. Lalluwadia
+                            <br>M. Tech.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9879221651
+                            <br><b>office Phone: </b>(O)1740
+                            <br><b>E-mail : </b>ahl@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Telematics
+                            <br>RF & Microwave Engineering
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>RF & Microwave Engineering
+                            <br>Image Processing
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./udd.PNG">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. (Mrs) Upena. D. Dalal
+                            <br>Ph. D.
+                            <br>Professor</b>
+                            <br><b>Mobile: </b>+91 0989805772
+                            <br><b>office Phone: </b>(O)1753
+                            <br><b>E-mail : </b>udd@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/resume_udd.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Digital communication
+                            <br>Adhoc Networks
+                            <br>Wideband communication
+                            <br>Mobile computing
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Wireless Communication techniques
+                            <br>5G technology
+                            <br>Wireless systems
+                            <br>Optical wireless
+                            <br>Signal processing
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./nbk.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Prof. Naresh B. Kanirkar
+                            <br>M. Tech.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9924729298
+                            <br><b>office Phone: </b>(O)1733
+                            <br><b>E-mail : </b>nbk@eced.svnit.ac.in
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Basic of Electronics Engineering
+                            <br>Electronic Devices & Circuits
+                            <br>Solid State Devices
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>CDMA
+                            <br>Mobile Communication
+                        </p>
+                        </li>
+                    </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./pks.PNG">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Prashant K. Shah
+                            <br>M.E.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9429510861
+                            <br><b>office Phone: </b>(O)1727
+                            <br><b>E-mail : </b>pks@eced.svnit.ac.in
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Basics of Electronics Engineering
+                            <br>Digital Circuits
+                            <br>Microprocessor
+                            <br>Digital Signal Processing
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>LMI Based Improved Stability Criteria
+                            <br>(DSP based)
+                        </p>
+                        </li>
+                    </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./jns.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Jignesh N. Sarvaiya
+                            <br>Ph. D.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9924728285
+                            <br><b>office Phone: </b>(O)1734
+                            <br><b>E-mail : </b>jns@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/8171jns.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Electronic System Design
+                            <br>Digital Image Processing
+                            <br>Information Theory & Coding
+                            <br>Analog Integrated Circuits
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Image Processing
+                            <br>Medical Instrumentation
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./add.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Anand D. Darji
+                            <br>B.E (Electronics) M.Tech (Electronics Systems), 
+                            <br>IIT Bombay Ph.D. (Microelectronics), 
+                            <br>IIT Bombay
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9426886446
+                            <br><b>office Phone: </b>(O)1742
+                            <br><b>E-mail : </b>add@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/4023add.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>VLSI Design
+                            <br>Electronics Instrumentation
+                            <br>Digital Integrated Circuits
+                            <br>Digital VLSI Design (PG)
+                            <br>VLSI System Design ( PG-Elective)
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>VLSI Design
+                            <br>FPGA-based systems design
+                            <br>Device modelling
+                            <br>VLSI DSP architecture
+                            <br>Embedded System Design
+                            <br>Electronics Instrumentation
+                            <br>Signal Processing
+                            <br>Bio-medical Signal/image processing
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./hod.PNG">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. PIYUSH N. PATEL
+                            <br>Ph. D.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 8200301738
+                            <br><b>office Phone: </b>(O)1732
+                            <br><b>E-mail : </b>pnp@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/pnpatel.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Optical Communication Systems
+                            <br>Optical Networks
+                            <br>Analog and Digital Communication Systems
+                            <br>Sensors and Transducers
+                            <br>Electronic Devices and Circuits
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Optical Communications and Networks
+                            <br>Photonics Devices & Sensors
+                            <br>Microwave Antenna and Wavegudes
+                            <br>Metamaterial based Sensors
+                            <br>Optical, RF, Metamaterial 
+                            <br>based Sensors & Biosensors
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./zmp.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Zuber M. Patel
+                            <br>Ph. D.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9898698793
+                            <br><b>office Phone: </b>(O)1743
+                            <br><b>E-mail : </b>zmp@eced.svnit.ac.in
+                            <br><b>Personal E-mail: </b>zuber_patel@rediffmail.com
+                            <br><a href="https://www.svnit.ac.in/facup/CV_zuberPatel.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Digital Logic design
+                            <br>Embedded Systems
+                            <br>Microelectronics and VLSI
+                            <br>Microcontrollers and Interfacing
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>HDL/FPGA based design
+                            <br>VLSI Design of RISC Microprocessors
+                            <br>FPGA/ASIC Design of 
+                            <br>wireless transceiver hardware
+                            <br>Embedded Systems
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./pje.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Pinalkumar J. Engineer
+                            <br>Ph. D.
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 9924711335
+                            <br><b>office Phone: </b>(O)1738
+                            <br><b>E-mail : </b>pje@eced.svnit.ac.in
+                            <br><a href="https://svnit.ac.in/Data/facup/pjengineer/index.html">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Advanced Processor Architecture
+                            <br>DSP Structures for VLSI
+                            <br>Embedded Systems
+                            <br>Real Time Systems
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>FPGA based system design
+                            <br>VLSI architecture for real-time signal
+                            <br>/image processing
+                            <br>High performance embedded computing
+                            <br>Embedded and real-time systems
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./rsk.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. (Mrs.) Rasika N. Dhavse
+                            <br>Ph. D.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9723815535
+                            <br><b>office Phone: </b>(O)1737
+                            <br><b>E-mail : </b>rsk@eced.svnit.ac.in
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>VLSI Design
+                            <br>VLSI Technology
+                            <br>Electronic Circuits
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>VLSI Design
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./asm.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Abhilash S. Mandloi
+                            <br>Ph. D.
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 9904003858
+                            <br><b>office Phone: </b>(O)1735
+                            <br><b>E-mail : </b>asm@eced.svnit.ac.in
+                            <br><b>Personal E-mail: </b><br>abhilash.mandloi21@gmail.com
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Optical Networks, 
+                            <br>Advance Optical Communication Systems,
+                            <br>Basics of Electronics Engineering,
+                            <br>Data Communication and Networks,
+                            <br>Linear Electronics
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Fibre Optics Optical Communications,
+                            <br>Optical Networks, Free Space Optics,
+                            <br>Photonic Devices, Integrated Optics
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./jnpatel.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. (Ms.) Jigisha N. Patel
+                            <br>Ph. D.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9924726100
+                            <br><b>office Phone: </b>(O)1754
+                            <br><b>E-mail : </b>jnpatel@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/jnp.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Information Theory and Coding
+                            <br>Multimedia Communication
+                            <br>Digital Logic Design
+                            <br>Image processing
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Wireless Communication
+                            <br>Image / Video Coding
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./sgupta.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. (Ms.) Shilpi Gupta
+                            <br>Ph. D.
+                            <br>Associate Professor</b>
+                            <br><b>Mobile: </b>+91 9737011973
+                            <br><b>office Phone: </b>(O)1739
+                            <br><b>E-mail : </b>sgupta@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/6291SGupta.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Digital satellite Communication
+                            <br>Digital Electronics
+                            <br>Electronics Devices and Circuits
+                            <br>MIMO Technology
+                            <br>Analog and Digital Communication
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>5G Technology
+                            <br>Massive MIMO Detection Techniques
+                            <br>Antenna Design for 5G Applications
+                            <br>Waveform Designing for MIMO Radar
+                            <br>Free Space Optics
+                            <br>Fiber Optic Sensors
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./s.golak.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Prof. Golak Santra
+                            <br>M. E.
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 9924722883
+                            <br><b>office Phone: </b>(O)1735
+                            <br><b>E-mail : </b>s.golak@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/gs.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>EM Theory
+                            <br>Analog Integrated Circuit
+                            <br>Microwave Integrated Circuit,Microwave Engineering
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Patch AntennaMicro-strip filter
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./snshah.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. (Mrs.) Shweta N. Shah
+                            <br>Ph. D.
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 992545849
+                            <br><b>office Phone: </b>(O)1748
+                            <br><b>E-mail : </b>snshah@eced.svnit.ac.in
+                            <br><a href="https://www.svnit.ac.in/facup/SNS/index.html">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Basics of Communication System
+                            <br>Mobile Communication
+                            <br>Wireless Communication
+                            <br>Mobile Computing
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Wireless Communication
+                            <br>Mobile Communication and standards
+                            <br>Digital Video Broadcast and standards
+                            <br>Cognitive Radio
+                            <br>NavIC/IRNSS
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./mcp.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Prof. Mehul C. Patel
+                            <br>M.E.
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 8849578237
+                            <br><b>office Phone: </b>(O)1748
+                            <br><b>E-mail : </b>mpc@eced.svnit.ac.in
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Information Theory & Coding
+                            <br>Application of DSP
+                            <br>Analog & Digital Communication
+                            <br>Satellite Communication
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Digital Signal Processing using VLSI
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./kpu.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Kishor P. Upla
+                            <br>Post Doctoral Fellow-ERCIM
+                            <br>(NTNU, Norway),
+                            <br>Ph.D. (DA-IICT, Gandhinagar
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 9998969067
+                            <br><b>office Phone: </b>(O)1726
+                            <br><b>E-mail : </b>kpu@eced.svnit.ac.in
+                            <br><b>Personal E-mail: </b>
+                            <br>kishorupla@gmail.com
+                            <br><a href="https://sites.google.com/site/kpupla/home">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Signals & Systems
+                            <br>Digital Signal Processing
+                            <br>Electronics Devices & Circuits
+                            <br>Communication Systems
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Machine/Deep Learning
+                            <br>Object detection/recognition,
+                            <br>Multi-spectral and hyperspectral image processing
+                            <br>Image Restoration, Bio-medical Image Fusion
+                            <br>Information Fusion
+                            <br>Multi-Resolution Image Fusion/Pan-Sharpening
+                            <br>Image Super - Resolution
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./d.joshi.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Deepak Joshi
+                            <br>Ph.D. (IIT Guwahati)
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 7896171659
+                            <br><b>office Phone: </b>(O)-
+                            <br><b>E-mail : </b>d.joshi@eced.svnit.ac.in
+                            <br><a href="https://sites.google.com/view/djoshi/home">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Testing and Verification of VLSI Circuits
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Metaheuristics, 
+                            <br>Analog Circuits: Design and Optimization,
+                            <br>Computational Intelligence, 
+                            <br>CAD for VLSI
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./sumandeb.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Suman Deb
+                            <br>Ph.D. (IIT Guwahati)
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 8011870732
+                            <br><b>office Phone: </b>(O)-
+                            <br><b>E-mail : </b>sumandeb@eced.svnit.ac.in
+                            <br><a href="https://sites.google.com/view/sumandeb/home">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Advance Digital Signal Processing
+                            <br>Digital Signal Processing,
+                            <br>Ad-Hoc Networks
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Signal Processing,Speech Processing,
+                            <br>Speech based Health Analysis, 
+                            <br>Emotion Analysis based on Speech and Image,
+                            <br>Speech Pathology Detection,
+                            <br>Voice Conversion/ Speaker Identity Conversion,
+                            <br>Pattern Recognition
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./abhishek.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Abhishek Acharya
+                            <br>PhD (Microelectronics & VLSI), IIT Roorkee
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 9413279923
+                            <br><b>office Phone: </b>(O)-
+                            <br><b>E-mail : </b>abhishek@eced.svnit.ac.in
+                            <br><a href="https://sites.google.com/view/abhishekacharya/home">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Electronic Devices,
+                            <br>Electronic Circuits,
+                            <br>Linear Integrated Circuits,
+                            <br>VLSI Design
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Physics & Modeling of Nano-Scale Devices,
+                            <br>Device-Circuit Interactions in 
+                            <br>Nano-Scale Transistors,
+                            <br>Wide Bandgap Semiconductors and 
+                            <br>2D Materials for Devices & Circuits
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./kamalcaptain.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Kamal Captain
+                            <br>Ph.D. (DAIICT, Gandhinagar)
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 9824755453
+                            <br><b>office Phone: </b>(O)-
+                            <br><b>E-mail : </b>kamalcaptain@eced.svnit.ac.in
+                            <br><b>Personal E-mail: </b>
+                            <br>kamalcaptain@gmail.com
+                            <br><a href="https://sites.google.com/site/kamalcaptain/">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Probability and Random Processes
+                            <br>Signals and Systems,
+                            <br>Digital Signal Processing,
+                            <br>Electronic System Design
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Cognitive Radio, 
+                            <br>Signal Processing,
+                            <br>Statistical Signal Processing,
+                            <br>Wireless Communication, 
+                            <br>Machine Learning
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="#130512" style="padding: 10; width: 180px;">
+                        <img src="./kki.png">
+                    </td>
+                    <td style="width: 100%; background: #FFEEAD;">
+                        <ul>
+                            <li>
+                        <p><b>Dr. Kirti Inamdar
+                            <br>Ph. D.
+                            <br>Assistant Professor</b>
+                            <br><b>Mobile: </b>+91 9427452999
+                            <br><b>office Phone: </b>(O)-
+                            <br><b>E-mail : </b>kki@eced.svnit.ac.in
+                            <br><b>Personal E-mail: </b>
+                            <br>kirtibajaj@gmail.com
+                            <br><a href="https://www.svnit.ac.in/facup/KIRTI-INAMDAR_resume_SVNIT.pdf">Personal Webpage</a>
+                        </p>
+                            </li>
+
+                            <li>
+                        <p>
+                            <b>Teaching: </b>
+                            <br>Electromagnetics and wave Propagation Theory,
+                            <br>Antenna Theory, RF & Microwave Theory,
+                            <br>Satellite Communication, RADAR and its Application,
+                            <br>Analog & digital Communication
+                            </li>
+
+                            <li>
+                            <br><b>Area of Research:</b>
+                            <br>Microstrip Patch Antenna design 
+                            <br>using Metamaterials,
+                            <br>Wearable Antennas
+                        </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <p><b>All Right Reserved, Team Syntex Terminators, SVNIT, Surat
+            <br><br><a href="./contact.html" class="nav_list">Contact Us</a></b></p>
+        </div>
+    </body>
+</html>

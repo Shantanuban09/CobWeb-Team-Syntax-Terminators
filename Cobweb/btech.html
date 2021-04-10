@@ -1,0 +1,456 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Btech page</title>
+    <style>
+body {
+    background: linear-gradient(to top,#9768D1, #16193B);
+    font-size: 18;
+    color: #dfdfdf;
+    font-family:'Exo 2', sans-serif;
+}
+.tab{
+    width: 100%;
+    height: 100%;
+}
+.table{
+    text-align: center;
+    margin: 0 15%;
+    width: 70%;
+    height: 70%;
+    background-color: #FFD34E;            
+}
+.table th{
+    font-size: 24;
+}
+.table td{
+    font-size: 18;
+}
+.table a{
+    color: #dF4F49;
+}
+.sections{
+  
+    margin-top: 50px;
+}
+.heading{
+    background-color: black;
+}
+
+#heading_1, #heading_3{
+    padding-left: 5%;
+    padding-right: 30%;
+    margin-right: 30%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-bottom: 5px solid darkblue;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#content_1, #content_3{
+    margin-right: 30%; 
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#heading_2{
+    padding-right: 30%;
+    padding-left: 5%;
+    margin-left: 30%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-bottom: 5px solid darkblue;
+    color: white;
+    font-size: 1.4rem;
+}
+#content_2{
+    margin-left: 30%; 
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+ul{
+    list-style: square;
+}
+
+/* Slider */
+#slider{
+    margin: 0 10vw;
+    padding-top: 20;
+    overflow: hidden;
+    width: 80vw;
+    height: 80vh;
+    opacity: 0.8;
+    border: 10;
+}
+#slider div{
+    position: relative;
+    width: 500%;
+    height: 80vh;
+    margin: 0;
+    left: 0%;
+    animation: 25s slider infinite;
+}
+.slide{
+    background-color: blue;
+    width: 20%;
+    height: 80vh;
+    float: left;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    15% {
+        left: 0;
+    }
+    21.5% {
+        left: -100%;
+    }
+    36.25% {
+        left: -100%;
+    }
+    42.5% {
+        left: -200%;
+    }
+    57.5% {
+        left: -200%;
+    }
+    63.75% {
+        left: -300%;
+    }
+    78.75% {
+        left: -300%;
+    }
+    85% {
+        left: -400%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
+
+.footer {
+    background: #130512;
+    color: #EFEFEF;
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
+    align-items: center;
+}
+.footer p{
+    padding-top: 30;
+}
+.footer a{
+    color: #E74C3C;
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    color:#dfdfdf;
+    background-color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#eced{
+    background-color: black;
+    color:#dfdfdf;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 10px;
+    display: none;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: black;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    padding: 10px, 10px;
+    font-size: 1.2rem;
+    background-color: black;
+}
+.nav-list li {
+    background-color: black;
+    margin: 20px;
+}
+
+.nav-list li a:hover{
+    color: #dfdfdf;
+    background-color: #E74C3C;
+}
+.nav-list a{
+    text-decoration: none;
+    background-color: black;
+    padding: 0px 8px 0px 8px;
+    border-radius: 8px;
+    color: #dfdfdf;
+}
+#hamburger_label{
+    color: white;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+@media only screen and (max-width:920px) {
+    .navbar h1{
+     display: none;
+    }
+    #eced{
+        display: block;
+        font-size: 1.4rem;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #hamburger_label{
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        top: 2.5%;
+        right: 4%;
+        background-color: black;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 100vh;
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: flex;
+    }
+    
+    #eced{
+        font-size: 1.2rem;
+    }
+    #background_img p{
+        display: none;
+    }
+}
+
+.submenu ul{
+    list-style: none;
+    background-color: black;
+}
+.submenu ul li a{
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.submenu li{
+    text-align: center;
+}
+.group{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.submenu{
+    display: none;
+}
+#group_2:hover  #submenu_2{
+    display: flex;
+}
+#group_3:hover  #submenu_3{
+    display: flex;
+}
+#group_4:hover  #submenu_4{
+    display: flex;
+}
+#group_5:hover  #submenu_5{
+    display: flex;
+}
+
+
+.active a{
+    color: #dfdfdf;
+    background-color:#E74C3C;
+}
+
+
+
+
+
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
+        <meta http-equiv="refresh" contents="3" charset="UTF-8" >
+    </head>
+        
+    <body>
+
+        <nav>
+            <section id="header">
+                <section class="navbar">
+                    <img class="logo" src="./svnit logo.png" alt="svnit_logo">
+                    <h1>Electronics Engineering Department</h1>
+                    <label id="hamburger_label" for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav-list">
+    
+                        <li><a href="./index.html">&nbsp;&#127968;&nbsp;</a></li>
+                        <div class="group" id="group_2">
+    
+                            <li class="active"><a href="./admission.html">Academics</a></li>
+                            <div class="submenu" id="submenu_2">
+                                <ul>
+                                    <li><a href="./admission.html">Admission</a></li>
+                                    <li class="active"><a href="./btech.html">B.Tech (E.C)</a></li>
+                                    <li><a href="./mtech.html">M.Tech (E.C)</a></li>
+                                    <li><a href="./phd.html">Ph.D Electroics Engineering</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_3" class="group">
+                            <li><a href="./Faculty.html">People</a></li>
+                            <div class="submenu" id="submenu_3">
+                                <ul>
+                                    <li><a href="./Faculty.html">Faculty</a></li>
+                                    <li><a href="./M.Tech students.html">M.Tech Students</a></li>
+                                    <li><a href="./Ph. D. students.html">Ph.D Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_4" class="group">
+                            <li><a href="./gallery.html">Gallery</a></li>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="./research.html">Research</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="library.html">Library</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+                    </ul>
+                </section>
+                <div id="eced">Electronics Engineering Department</div>
+            </section>
+        </nav>
+
+
+    <!-- slider -->
+    <div id="slider">
+        <div>
+            <img class="slide" id="slide_1" src="iete 1.png" alt="">
+            <img class="slide" id="slide_2" src="iete 2.jpg" alt="">
+            <img class="slide" id="slide_3" src="iete 3.jpg" alt="">
+            <img class="slide" id="slide_4" src="iete 4.jpg" alt="">
+            <img class="slide" id="slide_5" src="iete 5.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- content -->
+    <section class="sections" id="sec_1">
+        <div class="heading" id="heading_1">B.Tech. Electronics & Communication Engineering (Undergraduate Programme)</div>
+        <div id="content_1">One has to earn minimum 180 credits over 4 years of course ( Including project in 7th and 8th semester at institute ) Results are awarded on scale of 10.</div>
+    </section>
+    <section class="sections" id="sec_2">
+        <div class="heading" id="heading_2">Programme Educational Objectives (PEO)</div>
+        <div id="content_2">
+            <ul>
+            <li>Graduates formulate, analyze and solve real-life engineering problems applying the basic knowledge of Electronics Engineering. (knowledge)</li>
+
+            <li>Graduates become researcher or design professionals for sustainable state of the art products as per market trends. (Skill)</li>
+            
+            <li>Graduates take gainful employment for manufacturing functions or do the technology transfer or develop the industry.(Technical Contribution-Industry)</li>
+            
+            <li>Graduates become entrepreneurs in Engineering sector or involve in spreading his skill and experience globally.(Technical Contribution -society)</li>
+            </ul>   
+        </div>
+    </section>
+    <section class="sections" id="sec_3">
+        <div class="heading" id="heading_3">Programme Outcomes (PO)</div>
+        <div id="content_3">
+            <ul>
+                <li>Graduates will apply knowledge acquired in Mathematics, Science and Engineering to Electronics and Communication Engineering problems.</li>
+                <li>Graduates will have the ability to define the state of the art problems and technical plan to provide solutions by dividing them into small steps and conducting experiments, interpreting and analyzing the data at each level.</li>
+                <li>Graduates will formulate and design Electronic systems that would encompass Basic Electronics/Signal Processing/Processors or embedded systems/VLSI designs for ASICs/Control and Instrumentation/Communication Techniques and would meet specifications and requirements as demanded by the users (or to solve practical problem).</li>
+                <li>Graduates will apply design on tools to develop simulated model or hardware prototype, will conduct experiments or tests on it for various input conditions i.e. utilize tools to investigate, analyze, design, simulate and/or fabricate/commission complete systems)</li>
+                <li>Graduates understand latest hardware and software tools/platforms, modern techniques and technologies, optimization techniques and algorithms to solve the given real life problems-both offline and real-time</li>
+                <li>Graduates will have the confidence to apply engineering solutions in global and societal contexts, i.e. ability to design and fabricate a hardware and/or software system, a component thereof, and processes to meet desired performance needs, within realistic constraints.</li>
+                <li>Graduates will understand quantitative modeling and analysis of a broad array of systems-level decision problems concerned with economic efficiency, work design, productivity and quality with environmental focus and long term solution.</li>
+                <li>Graduates should be capable of self-education and clearly understand the value of achieving perfection in their professional endeavors.</li>
+                <li>Graduates will participate as members of engineering and science laboratory teams, as well as members of multidisciplinary design teams</li>
+                <li>Graduates will be proficient in English language in both verbal and written forms which will enable them to compete with graduates of international engineering institutions.</li>
+                <li>Graduates will be broadly educated and will have an understanding of the impact of engineering on society and confront contemporary issues.</li>
+                <li>Graduates will exhibit competency in choosing and applying appropriate resource management technique(s) so as to optimally utilize resources/finance in industry.</li>
+            </ul>
+        </div>
+    </section>
+    <br><br><br>
+    <div class="tab">
+        <table class="table" border="13" bordercolor="black">
+            <tbody>
+                <tr style="background-color: black; color: white;">
+                    <th colspan="2">
+                        B.Tech. Electronics & Communication Engineering Course Curriculum
+                    </th>
+                </tr>
+                <tr>
+                    <td style="background: black; color: white; font-size: 18;"><b>B.Tech Syllabus  (Batch-2019 onwards</b></td>
+                    <td style="background: black; color: white; font-size: 18;"><b>B.Tech Syllabus   (upto Batch-2018)</b></td>
+                </tr>
+                <tr>
+                    <td><a href="./Btech_1st_year.pdf">1st Year</a></td>
+                    <td><a href="./Btech_3rd_year.pdf">3rd Year</a></td>
+                </tr>
+                <tr>
+                    <td><a href="./Btech_2nd_year.pdf">2nd Year</a></td>
+                    <td><a href="./Btech_4th_year.pdf">4th Year</a></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p><b>All Right Reserved, Team Syntex Terminators, SVNIT, Surat
+        <br><br><a href="./contact.html" class="nav_list">Contact Us</a></b></p>
+    </div>
+</body>
+</html>
