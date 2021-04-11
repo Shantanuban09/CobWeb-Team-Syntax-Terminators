@@ -1,83 +1,78 @@
-<html>
-    <head>
-        <title>
-            Ph. D. students Of Electronics Department
-        </title>
-        <script src="./Ph. D. students.js"></script>
-        
-        <style>
-body{
-    background: linear-gradient(to bottom,#9768D1, #16193B);
-    margin: 0%;
-    font-family:'Exo 2', sans-serif;
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            background: linear-gradient(to bottom,#9768D1, #16193B); 
+            font-family: 'Exo 2', sans-serif;
+            color: white;
+
+        }
+        .heading {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-top: 10px;
+            height: 40px;
+            background-color: rgb(26, 26, 26);
+            color: honeydew;
+        }
+        th, td {
+            font-size: 25px;
+        }
+        .tab{
+            width: 100%;
+            height: 100%;
+        }
+        .table{
+            text-align: center;
+            margin: 0 15%;
+            width: 70%;
+            height: 70%;
+            background: linear-gradient(to left bottom,#ED8C2B, #FFD34E);
+             color: #dF4F49;
+             
+        }
+
+.table a{
     color: #dF4F49;
+    font-size: 18;
 }
 
 
-.back{
-    margin: 0 10%;
-    margin-bottom: 30;
-    height: 100%;
-    background: linear-gradient(to bottom,#FFFAD5, #FFD34E);
-
+.sections{
+    margin-top: 50px;
+    width: 60%;
 }
-
-
-
 .heading{
-    width: 100%;
-    height: 40;
-    background: #130512;
-    text-align: center;
-}
-.heading p{
-    padding: 10 0;
-    font-size: larger;
-    color: #dfdfdf;
+    background-color: black;
 }
 
-
-.buttonc{
-    padding: 10 30;
-    margin: 0;
-}
-.buttonc input{
-    width: 120;
-    margin: 0 8;
-    padding: 10 10;
-    border: 5px;
-    border-color: rgba(128,128,128,0);
-    background: #E74C3C;
-    border-style: solid;
-    text-align: center;
-    color: #ffffff;
-    font-size: small;
-}
-.buttonc input:hover{
-    background: #FF6F69;
-    border: 20;
-    border-style: solid;
-    border-color: #FFD393;
-    cursor: pointer;
-}
-.buttonc table tr td p{
-    font-size: 10;
-    text-align: center;
+#heading_1{
+    padding: 20 0;
+    padding-left: 5%;
+    padding-right: 30%;
+    border-bottom: 5px solid darkblue;
+    color: white;
+    font-size: 1.4rem;
 }
 
-
-.pdf{
-    align-items: center;
-    padding: 10 5%;
-    width: 90%;
-    height: 78%;
+#content_1{
+    margin-right: 15%; 
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
-iframe{
-    border: 0;
-    width: 100%;
-    height: 100%;
-}
-
+        
 
 
 
@@ -250,8 +245,6 @@ iframe{
 
 
 
-
-
         </style>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
@@ -272,25 +265,24 @@ iframe{
                         <li><a href="./index.html">&nbsp;&#127968;&nbsp;</a></li>
                         <div class="group" id="group_2">
     
-                            <li><a href="./admission.html">Academics</a></li>
+                            <li class="active"><a href="./admission.html">Academics</a></li>
                             <div class="submenu" id="submenu_2">
                                 <ul>
                                     <li><a href="./admission.html">Admission</a></li>
                                     <li><a href="./btech.html">B.Tech (E.C)</a></li>
                                     <li><a href="./mtech.html">M.Tech (E.C)</a></li>
-                                    <li><a href="./phd.html">Ph.D Electroics Engineering</a></li>
+                                    <li class="active"><a href="./phd.html">Ph.D Electroics Engineering</a></li>
                                 </ul>
                             </div>
                         </div>
     
                         <div id="group_3" class="group">
-                            <li class="active"><a href="./Faculty.html">People</a></li>
+                            <li><a href="./Faculty.html">People</a></li>
                             <div class="submenu" id="submenu_3">
                                 <ul>
                                     <li><a href="./Faculty.html">Faculty</a></li>
-                                    <li><a href="./Staff.html">Staff</a></li>
                                     <li><a href="./M.Tech students.html">M.Tech Students</a></li>
-                                    <li class="active"><a href="./Ph. D. students.html">Ph.D Students</a></li>
+                                    <li><a href="./Ph. D. students.html">Ph.D Students</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -316,23 +308,53 @@ iframe{
             </section>
         </nav>
 
-<br><br><br><br>
+    <h2 class="heading">Ph. D. Electronics Engineering</h2><br><br>
+    <section class="sections" id="sec_1">
+        <div class="heading" id="heading_1">Ph. D. Electronics Engineering</div>
+        <div id="content_1">The doctoral programme in the department trains the candidates to pursue original research ideas and add to the current state-of-the-art and prepares them for academic as well as research and development works. The admissions to the Ph.D. programmes are through written test/interviews conducted in the department.</div>
+    </section>
+<br><br><br>
+<div class="tab">
+    <table class="table" border="13" bordercolor="black">
+        <tbody>
+            <tr style="background-color: black; color: white;">
+                <th>Courses</th>
+                <th>Comprehensive</th>
+                <th>Reports</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/Revised%20Grade%20NPTEL-SWAYAM%20Courses.pdf">Grade NPTEL-SWAYAM Courses</a></td>
+                <td><a href="https://www.svnit.ac.in/Data/Notice/2021/March/ECED_PhD%20Comprehensive%20Exam%20Syllabus.pdf">Comprehensive Examination Syllabus</a></td>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/Research%20Progress%20Seminar%20Report.pdf">Research Progress Seminar Report</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/PhD%20student%20NPTEL%20gradesheet.pdf">NPTEL Gradesheet</a></td>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/41stIAACMinutes_Reso.-2.pdf">41st IAAC</a></td>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/Credit%20Seminar%20Evolution%20Report.pdf">Credit Seminar Evolution</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/PhD%20student%20tutorial%20gradesheet%20tamplet.pdf">PhD Tutorial Gradesheet</a></td>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/44th%20Senate%20Minutes_Ph.%20D.%20Regulations.pdf">44th Senate Minutes Ph. D. Regulations</a></td>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/Pre%20Synopsis%20Seminar%20Form.pdf">Pre Synopsis Seminar Form</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/Ph.%20D._Submission%20of%20Synopsis_Certificate.pdf">Synopsis_Certificate</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.svnit.ac.in/web/department/electronics/Data/Notice/2020/November/Ph.%20D.%20Viva-Voce%20Report.pdf">Ph. D. Viva-Voce Report</a></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+<div class="footer">
+        <p><b>All Right Reserved, Team Syntex Terminators, SVNIT, Surat
+        <br><br><a href="./contact.html" class="nav_list">Contact Us</a></b></p>
+</div>
+</body>
 
-        <div class="back">
-            <div class="heading">
-                <p>Ph. D Electronics Engineering Department</p>
-            </div>
-<br>
-            <div class="buttonc">
-                <input type="button" onclick="setURL(1)" value="Ongoing">
-&nbsp;
-                <input type="button" onclick="setURL(2)" value="Completed">
-            </div>
-            <iframe id="iframe" src="./Completed Ph.D.pdf" class="pdf"></iframe> 
-        </div>
-        <div class="footer">
-            <p><b>All Right Reserved, Team Syntex Terminators, SVNIT, Surat
-            <br><br><a href="./contact.html" class="nav_list">Contact Us</a></b></p>
-        </div>
-    </body>
 </html>

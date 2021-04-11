@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,7 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
 
     <style>
+        body{
+            background: linear-gradient(to bottom,#9768D1, #16193B); 
+            font-family: 'Exo 2', sans-serif; 
+            color: #dF4F49;
+        }
         .heading {
+            margin: 0;
             text-align: center;
             padding-top: 10px;
             height: 50px;
@@ -18,31 +23,277 @@
             color: honeydew;
         }
 
+        .back{
+            margin: 0 10%;
+            height: 100%;
+            width: 80%;
+        }
+
         th,
         td {
+            padding: 5 5;
             font-size: 25px;
         }
 
         .lastline {
+            margin: 0;
             font-weight: bolder;
             font-style: italic;
             text-align: center;
             font-size: 25px;
+            padding: 10 0;
+            background: rgb(26, 26, 26);
         }
-    </style>
 
-</head>
 
-<body style="background: linear-gradient(to bottom,#9768D1, #16193B); font-family: 'Exo 2', sans-serif; color: #dF4F49;">
+
+
+.footer {
+    background: #130512;
+    color: #EFEFEF;
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
+    align-items: center;
+}
+.footer p{
+    padding-top: 30;
+}
+.footer a{
+    color: #E74C3C;
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    color:#dfdfdf;
+    background-color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#eced{
+    background-color: black;
+    color:#dfdfdf;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 10px;
+    display: none;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: black;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    padding: 10px, 10px;
+    font-size: 1.2rem;
+    background-color: black;
+}
+.nav-list li {
+    background-color: black;
+    margin: 20px;
+}
+
+.nav-list li a:hover{
+    color: #dfdfdf;
+    background-color: #E74C3C;
+}
+.nav-list a{
+    text-decoration: none;
+    background-color: black;
+    padding: 0px 8px 0px 8px;
+    border-radius: 8px;
+    color: #dfdfdf;
+}
+#hamburger_label{
+    color: white;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+@media only screen and (max-width:920px) {
+    .navbar h1{
+     display: none;
+    }
+    #eced{
+        display: block;
+        font-size: 1.4rem;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #hamburger_label{
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        top: 2.5%;
+        right: 4%;
+        background-color: black;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 100vh;
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: flex;
+    }
+    
+    #eced{
+        font-size: 1.2rem;
+    }
+    #background_img p{
+        display: none;
+    }
+}
+
+.submenu ul{
+    list-style: none;
+    background-color: black;
+}
+.submenu ul li a{
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.submenu li{
+    text-align: center;
+}
+.group{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.submenu{
+    display: none;
+}
+#group_2:hover  #submenu_2{
+    display: flex;
+}
+#group_3:hover  #submenu_3{
+    display: flex;
+}
+#group_4:hover  #submenu_4{
+    display: flex;
+}
+#group_5:hover  #submenu_5{
+    display: flex;
+}
+
+
+.active a{
+    color: #dfdfdf;
+    background-color:#E74C3C;
+}
+
+
+
+
+
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
+        <meta http-equiv="refresh" contents="3" charset="UTF-8" >
+    </head>
+        
+    <body>
+
+        <nav>
+            <section id="header">
+                <section class="navbar">
+                    <img class="logo" src="./svnit logo.png" alt="svnit_logo">
+                    <h1>Electronics Engineering Department</h1>
+                    <label id="hamburger_label" for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav-list">
+    
+                        <li><a href="./index.html">&nbsp;&#127968;&nbsp;</a></li>
+                        <div class="group" id="group_2">
+    
+                            <li><a href="./admission.html">Academics</a></li>
+                            <div class="submenu" id="submenu_2">
+                                <ul>
+                                    <li><a href="./admission.html">Admission</a></li>
+                                    <li><a href="./btech.html">B.Tech (E.C)</a></li>
+                                    <li><a href="./mtech.html">M.Tech (E.C)</a></li>
+                                    <li><a href="./phd.html">Ph.D Electroics Engineering</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_3" class="group">
+                            <li><a href="./Faculty.html">People</a></li>
+                            <div class="submenu" id="submenu_3">
+                                <ul>
+                                    <li><a href="./Faculty.html">Faculty</a></li>
+                                    <li><a href="./Staff.html">Staff</a></li>
+                                    <li><a href="./M.Tech students.html">M.Tech Students</a></li>
+                                    <li><a href="./Ph. D. students.html">Ph.D Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_4" class="group">
+                            <li><a href="./gallery.html">Gallery</a></li>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="./research.html">Research</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="library.html">Library</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+                    </ul>
+                </section>
+                <div id="eced">Electronics Engineering Department</div>
+            </section>
+        </nav>
+
+
     <h1 class="heading">CONTACT US</h1><br><br>
-    <table class="table" style="text-align: center; width: 100%; background-color:  #FFD34E;" border="1" cellpadding="2"
+    <div class="back">
+    <table class="table" style="text-align: center; width: 100%; background-color:  #FFD34E;" border="0" cellpadding="2"
         cellspacing="2">
         <tbody>
             <tr>
-                <th style="width: 50%; height: 60%;">ADDRESS<br>
+                <th style="width: 50%; height: 60%;"><b>ADDRESS</b><br>Sardar Vallabhbhai National Institute of Technology<br>Ichchhanath<br>Surat, Gujrat, India
+                    <br>PIN-395007<br>
                 </th>
-                <td>Sardar Vallabhbhai National Institute of Technology<br>Ichchhanath<br>Surat, Gujrat, India
-                    <br>PIN-395007<br><br><iframe
+                <td><br><iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d465.08887639625885!2d72.783765!3d21.163896!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x397f9a7ecd5b9697!2sElectronics%20Engineering%20Department!5e0!3m2!1sen!2sin!4v1618040552692!5m2!1sen!2sin"
                         width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </td>
@@ -62,6 +313,12 @@
         </tbody>
     </table>
     <p class="lastline">Office Hours: 9:30 AM to 6:00 PM (MON - FRI)</p>
+    </div>
+    <div class="footer">
+        <p><b>All Right Reserved, Team Syntex Terminators, SVNIT, Surat
+        <br><br><a href="./contact.html" class="nav_list" style="color: white; background-color: #E74C3C;padding: 3 3;border: #E74C3C; border-radius: 20;">Contact Us</a></b></p>
+    </div>
+</body>
 </body>
 
 </html>

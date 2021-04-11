@@ -222,6 +222,7 @@ body{
     text-align: center;
 }
 #notice_bottom{
+        margin-top: 0;
         width: 100vw;
         height: 20vh;
         background-color:black;
@@ -257,10 +258,11 @@ body{
         display: none;
     }
     #notice_bottom{
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 0;
     }
     #background_img{
         width: 100vw;
@@ -301,4 +303,21 @@ body{
     /* #background_img p{
         display: none;
     } */
+}
+
+.footer {
+    background: #130512;
+    color: #EFEFEF;
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
+    align-items: center;
+}
+.footer p{
+    padding-top: 30;
+}
+.footer a{
+    color: #E74C3C;
 }

@@ -9,17 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
 
     <style>
+        *{
+            margin: 0px;
+        }
         body{
             background: linear-gradient(to bottom,#9768D1, #16193B); 
             font-family: 'Exo 2', sans-serif;
         }
 
-        h1{
+        h2{
             color: white;
         }
 
-        .headings {
+        .headings a{
             text-align: center;
+            font-size: 20;
+            padding: 5 5;
         }
 
         .sponsored a {
@@ -33,12 +38,12 @@
             width: 40%;
             margin-left: 5%;
             margin-right: 4%;
-            font-size: 30px;
+            font-size: 20px;
             text-decoration: none;
             border-radius: 30px;
         }
 
-        .sponsored a:hover,.facilities a:hover, .dissertion a:hover, .project a:hover{
+        .sponsored a:hover,.facilities a:hover, .dissertion a:hover, .project a:hover, .headings a:hover{
             background-color: #e74c3c;
             color: white;
         }
@@ -54,7 +59,7 @@
             width: 60%;
             margin-left: 20%;
             margin-right: 2%;
-            font-size: 30px;
+            font-size: 20px;
             text-decoration: none;
             border-radius: 30px;
         }
@@ -70,7 +75,7 @@
             width: 22%;
             margin-left: 1%;
             margin-right: 1%;
-            font-size: 25px;
+            font-size: 20px;
             text-decoration: none;
             border-radius: 30px;
         }
@@ -87,7 +92,7 @@
             width: 22%;
             margin-left: 1%;
             margin-right: 1%;
-            font-size: 25px;
+            font-size: 20px;
             text-decoration: none;
             border-radius: 30px;
         }
@@ -99,10 +104,11 @@
             padding: 0;
             width: 60%;
             height: 100%;
+            margin-bottom: 100;
         }
 
 
-        .footer {
+.footer {
     background: #130512;
     color: #EFEFEF;
     height: 110px;
@@ -111,6 +117,7 @@
     margin: 0 0;
     padding: 0;
     align-items: center;
+    position: static;
 }
 .footer p{
     padding-top: 30;
@@ -128,7 +135,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.navbar h1{
+.navbar h2{
     color:#dfdfdf;
     background-color: black;
     font-size: 1.6rem;
@@ -186,7 +193,7 @@
     display: none;
 }
 @media only screen and (max-width:920px) {
-    .navbar h1{
+    .navbar h2{
      display: none;
     }
     #eced{
@@ -285,7 +292,7 @@
             <section id="header">
                 <section class="navbar">
                     <img class="logo" src="./svnit logo.png" alt="svnit_logo">
-                    <h1>Electronics Engineering Department</h1>
+                    <h2>Electronics Engineering Department</h2>
                     <label id="hamburger_label" for="toggle">&#9776;</label>
                     <input type="checkbox" id="toggle">
                     <ul class="nav-list">
@@ -305,10 +312,11 @@
                         </div>
     
                         <div id="group_3" class="group">
-                            <li class="active"><a href="./Faculty.html">People</a></li>
+                            <li><a href="./Faculty.html">People</a></li>
                             <div class="submenu" id="submenu_3">
                                 <ul>
-                                    <li class="active"><a href="./Faculty.html">Faculty</a></li>
+                                    <li><a href="./Faculty.html">Faculty</a></li>
+                                    <li><a href="./Staff.html">Staff</a></li>
                                     <li><a href="./M.Tech students.html">M.Tech Students</a></li>
                                     <li><a href="./Ph. D. students.html">Ph.D Students</a></li>
                                 </ul>
@@ -320,7 +328,7 @@
                         </div>
     
                         <div id="group_5" class="group">
-                            <li><a href="./research.html">Research</a></li>
+                            <li class="active"><a href="./research.html">Research</a></li>
                             <div class="submenu" id="submenu_5">
                             </div>
                         </div>
@@ -340,32 +348,32 @@
     <div class="back">
     <br>
     <div class="sponsored">
-        <h1 class="headings">Sponsored Research Projects In Electronics Department:</h1>
-        <a href="">List Of on going Projects</a>
-        <a href="">List of Completed Projects</a>
+        <h2 class="headings">Sponsored Research Projects In Electronics Department:</h2>
+        <a href="./On-Going.pdf">List Of on going Projects</a>
+        <a href="./Completed Projects.pdf">List of Completed Projects</a>
     </div>
     <br>
     <br>
     <div class="facilities">
-        <h1 class="headings">Research Facilities in Electronics Department:</h1>
-        <a href="">List of high ended Research Facilities availaible</a>
+        <h2 class="headings">Research Facilities in Electronics Department:</h2>
+        <a href="./Research Facilities.pdf">List of high ended Research Facilities availaible</a>
     </div>
     <br>
     <br>
     <div class="dissertion">
-        <h1 class="headings">PG Dissertion undertaken by Electronics Department:</h1>
-        <a href="">2016-17 (CS & VLSI)</a>
-        <a href="">2017-18 (CS & VLSI)</a>
-        <a href="">2018-19 (CS & VLSI)</a>
-        <a href="">2019-20 (CS & VLSI)</a>
+        <h2 class="headings">PG Dissertion undertaken by Electronics Department:</h2>
+        <a href="./PG2016-17.pdf">2016-17 (CS & VLSI)</a>
+        <a href="./PG2017-18.pdf">2017-18 (CS & VLSI)</a>
+        <a href="./PG2018-19.pdf">2018-19 (CS & VLSI)</a>
+        <a href="./PG2019-20.pdf">2019-20 (CS & VLSI)</a>
     </div>
     <br><br>
     <div class="project">
-        <h1 class="headings">Project undertaken by B.Tech Students of ELectronics Department:</h1>
-        <a href="">2016-17</a>
-        <a href="">2017-18</a>
-        <a href="">2018-19</a>
-        <a href="">2019-20</a>
+        <h2 class="headings">Project undertaken by B.Tech Students of ELectronics Department:</h2>
+        <a href="./UG2016-17.pdf">2016-17</a>
+        <a href="./UG2017-18.pdf">2017-18</a>
+        <a href="./UG2018-19.pdf">2018-19</a>
+        <a href="./UG2019-20.pdf">2019-20</a>
     </div>
     <br>
     <br>

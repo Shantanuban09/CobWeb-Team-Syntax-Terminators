@@ -1,0 +1,560 @@
+<html>
+    <head>
+        <title>Staff Of Electronics Engineering Department</title>
+        <style>
+
+
+body{
+    background:  linear-gradient(to bottom,#9768D1, #16193B);
+    margin: 0%;
+    font-family: 'Exo 2', sans-serif;
+    color: #dF4F49;
+}
+
+.back{
+    margin: 0 20vw;
+    width: 60vw;
+    padding-bottom: 100;
+}
+
+
+
+.hod{
+    width: 100%;
+    color: #0d0d0d;
+    text-align: center;
+    font-size: large;
+}
+.hod th{
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: #f2f2f2;
+}
+.hod p{
+    font-size: medium;
+}
+.hod img{
+    width: 180px;
+    height: 232.33px;
+}
+
+
+
+
+.footer {
+    background: #130512;
+    color: #EFEFEF;
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
+    align-items: center;
+}
+.footer p{
+    padding-top: 30;
+}
+.footer a{
+    color: #E74C3C;
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    color:#dfdfdf;
+    background-color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#eced{
+    background-color: black;
+    color:#dfdfdf;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 10px;
+    display: none;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: black;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    padding: 10px, 10px;
+    font-size: 1.2rem;
+    background-color: black;
+}
+.nav-list li {
+    background-color: black;
+    margin: 20px;
+}
+
+.nav-list li a:hover{
+    color: #dfdfdf;
+    background-color: #E74C3C;
+}
+.nav-list a{
+    text-decoration: none;
+    background-color: black;
+    padding: 0px 8px 0px 8px;
+    border-radius: 8px;
+    color: #dfdfdf;
+}
+#hamburger_label{
+    color: white;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+@media only screen and (max-width:920px) {
+    .navbar h1{
+     display: none;
+    }
+    #eced{
+        display: block;
+        font-size: 1.4rem;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #hamburger_label{
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        top: 2.5%;
+        right: 4%;
+        background-color: black;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 100vh;
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: flex;
+    }
+    
+    #eced{
+        font-size: 1.2rem;
+    }
+    #background_img p{
+        display: none;
+    }
+}
+
+.submenu ul{
+    list-style: none;
+    background-color: black;
+}
+.submenu ul li a{
+    text-decoration: none;
+    color: #dfdfdf;
+}
+.submenu li{
+    text-align: center;
+}
+.group{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.submenu{
+    display: none;
+}
+#group_2:hover  #submenu_2{
+    display: flex;
+}
+#group_3:hover  #submenu_3{
+    display: flex;
+}
+#group_4:hover  #submenu_4{
+    display: flex;
+}
+#group_5:hover  #submenu_5{
+    display: flex;
+}
+
+
+.active a{
+    color: #dfdfdf;
+    background-color:#E74C3C;
+}
+
+
+
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Exo+2&display=swap" rel="stylesheet">
+        <meta http-equiv="refresh" contents="3" charset="UTF-8" >
+    </head>
+        
+    <body>
+
+        <nav>
+            <section id="header">
+                <section class="navbar">
+                    <img class="logo" src="./svnit logo.png" alt="svnit_logo">
+                    <h1>Electronics Engineering Department</h1>
+                    <label id="hamburger_label" for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav-list">
+    
+                        <li><a href="./index.html">&nbsp;&#127968;&nbsp;</a></li>
+                        <div class="group" id="group_2">
+    
+                            <li><a href="./admission.html">Academics</a></li>
+                            <div class="submenu" id="submenu_2">
+                                <ul>
+                                    <li><a href="./admission.html">Admission</a></li>
+                                    <li><a href="./btech.html">B.Tech (E.C)</a></li>
+                                    <li><a href="./mtech.html">M.Tech (E.C)</a></li>
+                                    <li><a href="./phd.html">Ph.D Electroics Engineering</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_3" class="group">
+                            <li class="active"><a href="./Faculty.html">People</a></li>
+                            <div class="submenu" id="submenu_3">
+                                <ul>
+                                    <li><a href="./Faculty.html">Faculty</a></li>
+                                    <li class="active"><a href="./Faculty.html">Staff</a></li>
+                                    <li><a href="./M.Tech students.html">M.Tech Students</a></li>
+                                    <li><a href="./Ph. D. students.html">Ph.D Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="group_4" class="group">
+                            <li><a href="./gallery.html">Gallery</a></li>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="./research.html">Research</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+    
+                        <div id="group_5" class="group">
+                            <li><a href="library.html">Library</a></li>
+                            <div class="submenu" id="submenu_5">
+                            </div>
+                        </div>
+                    </ul>
+                </section>
+                <div id="eced">Electronics Engineering Department</div>
+            </section>
+        </nav>
+
+<br><br><br><br>
+            <div class="back">
+            <table class="hod" border="0">
+                <tbody>
+                <tr>
+                    <th colspan="5">
+                            Office Staff
+                    </th>
+                </tr>
+
+                <tr>
+                    <td style="width: 40%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./manoj.png">
+                    </td>
+                    
+                    <td style="width: 20%;"></td>
+
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./brijesh.jpg">
+                    </td>
+
+                    <td style="width: 40%;"></td>
+             </tr>
+
+                <tr>
+                    <td style="width: 40%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Manoj Reshamwala</b>
+                            <br>Head Clark
+                            <br><b>E-mail : </b>s_mmr@gmail.com
+                            <br><b>Contact : </b>0261-220-1552
+                            <br>(Daily Wager)
+                        </p>
+                    </td>
+
+                    <td style="width: 20%;"></td>
+
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Brijesh Rana</b>
+                            <br>Clerk
+                            <br><b>E-mail : </b>ranabrijesh44@gmail.com
+                            <br><b>Contact : </b>0261-220-1552
+                            <br>(Contract Staff)
+                        </p>
+                    </td>
+
+                    <td style="width: 40%;"></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+<br><br><br>
+            <div class="back">
+            <table class="hod" border="0">
+                <tbody>
+                <tr>
+                    <th colspan="5">
+                        Laboratory Staff
+                    </th>
+                </tr>
+
+                <tr>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./praful.jpeg">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./shweta.jpeg">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./kapil.jpg">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Praful Patel</b>
+                            <br>Lab Assistant
+                            <br><b>E-mail : </b>praful.patel.pp88@gmail.com
+                            <br><b>Contact : </b>9574003375
+                        </p>
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mrs. Shweta Pathak</b>
+                            <br>Lab Assistant
+                            <br><b>E-mail : </b>-
+                            <br><b>Contact : </b>9924999119
+                        </p>
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Kapil Umarigar</b>
+                            <br>Lab Assistant
+                            <br><b>E-mail : </b>kapilumrigar@gmail.com
+                            <br><b>Contact : </b>8160212297
+                            <br>(Daily Wager)
+                        </p>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;<br>&nbsp;</td></tr>
+
+                <tr>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./yesha.jpeg">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./karishma.jpg">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./ghanshyam.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mrs. Yesha Surati</b>
+                            <br>Lab Assistant
+                            <br><b>E-mail : </b>ypatel.ec@gmail.com
+                            <br><b>Contact : </b>8141335379
+                            <br>(Contract Staff)
+                        </p>
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mrs. Karishma Patel</b>
+                            <br>Lab Assistant
+                            <br><b>E-mail : </b>karishma.patel119@gmail.com 
+                            <br><b>Contact : </b>8511522656
+                            <br>(Contract Staff)
+                        </p>
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Ghanshyam Katva</b>
+                            <br>System Admin
+                            <br><b>E-mail : </b>gbkatva@gmail.com
+                            <br><b>Contact : </b>8866304771
+                            <br>(Contract Staff)
+                        </p>
+                    </td>
+                </tr>
+
+<tr><td>&nbsp;<br>&nbsp;</td></tr>
+
+                <tr>
+                    <td style="padding: 10 10; width: 180px; color: #dF4F49;">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./vishal.jpg">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td style="padding: 10 10; width: 180px; color: #dF4F49;">  
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding: 10 10; width: 180px; color: #dF4F49;">
+
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Vishal Patel</b>
+                            <br>Lab Assistant
+                            <br><b>E-mail : </b>vishalpatel1504@gmail.com  
+                            <br><b>Contact : </b>9099886500
+                            <br>(Contract Staff)
+                        </p>
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td style="padding: 10 10; width: 180px; color: #dF4F49;">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+<br><br><br>
+            <table class="hod" border="0">
+                <tbody>
+                <tr>
+                    <th colspan="5">
+                        Laboratory Staff
+                    </th>
+                </tr>
+
+                <tr>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./ashok.jpeg">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./champak.jpeg">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./rajesh.jpeg">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Ashok Kothari</b>
+                            <br>Peon
+                            <br><b>Contact : </b>
+                            <br>(Contract Staff)
+                        </p>
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Champak Patel</b>
+                            <br>Peon
+                            <br><b>Contact : </b>8153945999
+                            <br>(Daily Wager)
+                        </p>
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Rajesh Arthania</b>
+                            <br>Peon
+                            <br><b>Contact : </b>9426230023
+                            <br>(Daily Wager)
+                        </p>
+                    </td>
+                </tr>
+
+                <tr><td>&nbsp;<br>&nbsp;</td></tr>
+
+                <tr>
+                    <td style="padding: 10 10; width: 180px; color: #dF4F49;">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="black" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <img src="./vijay.jpeg">
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td style="padding: 10 10; width: 180px; color: #dF4F49;">  
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding: 10 10; width: 180px; color: #dF4F49;">
+
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td bgcolor="#FFEEAD" style="padding: 10 10; width: 180px; color: #dF4F49;">
+                        <p>
+                            <b>Mr. Vijay Rathod</b>
+                            <br>Peon
+                            <br><b>Contact : </b>-
+                            <br>(Contract Staff)
+                        </p>
+                    </td>
+                    <td style="width: 45%;"></td>
+                    <td style="padding: 10 10; width: 180px; color: #dF4F49;">
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <p><b>All Right Reserved, Team Syntex Terminators, SVNIT, Surat
+                <br><br><a href="./contact.html" class="nav_list">Contact Us</a></b></p>
+        </div>
+    </body>
+</html>
